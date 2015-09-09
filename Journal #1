@@ -1,0 +1,45 @@
+Journal #1 - Selective flow visualization of traced particles 
+Patent number: US 9001117 B2 by Siemens research
+
+Intro
+Particle tracing tries to graphically represent the flow of fluids through conduits 
+as a set of particles in motion. this can be used to visualize the flow of blood 
+through blood vessels for diagnostic purposes.
+
+the patent provides a method for tracing many particles through a flow object and 
+creating a flow field.
+
+virtual particles get defined within a flow "domain" and values are collected for 
+flow porperties at each cell. 
+
+part of the method involves generating a histogram for each cell representing the 
+collected flow properties in that cell. 
+
+Contribution
+The primary contribution of this patent is a method for, in a way virtually disecting and analyzing the flow of a 3D system so regions of interest can be isolated and analyzed.
+
+Structure
+The structure of a patent submission is very technical without some of the "fluff" of journal article. It is very straight and to the point.
+
+An example that is described is below:
+The 3D vascular image may be received as input into the process. A vascular region of interest may then be extracted from the 3D vascular image. This may be a region of interest which may be of particular diagnostic value. For example, the region may include an aneurysm. Sample planes may then be extracted from the 3D vascular image. The sample planes may include planes of the 3D vascular image of particular interest. The intersection of the vascular region and the sample planes may yield a precise volume of interest
+
+Figures for start of patent
+https://patentimages.storage.googleapis.com/US20130038605A1/US20130038605A1-20130214-D00000.png
+- is a flowchart showing an approach for performing particle tracing based on the invention
+
+https://patentimages.storage.googleapis.com/US20130038605A1/US20130038605A1-20130214-D00002.png
+
+- is a diagram showing a vascular flow domain divided into cells based on the invention
+
+https://patentimages.storage.googleapis.com/US20130038605A1/US20130038605A1-20130214-D00003.png
+
+- is a rendering showing the change of blood density volume
+
+There is a bit here that is beyond my scope of knowledge, and the wording of a patent is very specific as well. Combined it makes it a challenging read, but the idea of compartmentalizing each cell of a view is an interesting approach to flow analysis.
+
+I chose this article as a different way of doing research, patents are technical articles that can provide very real applications of ideas.
+
+https://www.google.com/patents/US20130038605
+
+Li, Wei, Feng Qiu, and Daphne Yu. "Selective flow visualization of traced particles." U.S. Patent No. 9,001,117. 7 Apr. 2015.
