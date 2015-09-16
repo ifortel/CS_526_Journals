@@ -1,0 +1,32 @@
+BRAINtrinsic
+
+Conte, Giorgio, et al. "BRAINtrinsic: A Virtual Reality-Compatible Tool for Exploring Intrinsic Topologies of the Human Brain Connectome." Brain Informatics and Health. Springer International Publishing, 2015. 67-76.
+
+The human brain is a supremely complex entity that is compromised of over 100 billion neurons firing away sending signals all over the brain for every one of the human senses, everything that we as humans do and feel, everything. The brain is the driving force for the human body, without the brain nothing else can function. 
+
+To better understand how the brain works, scientists started splitting it up into regions and layers but getting down to the neuronal level of understanding has been a challenge due to the amount of processing power it would take to model 100 billion neurons.
+
+To make things easier, using medical imaging technologies from MRI like fMRI and DWI (one for structural connectivity, and one for functional connectivity), we're able to get a better picture of what's going on inside the brain. However that's still just very high level, we still need to get to a more granular level. Many neurological illnesses are still mysteries to us because we can't get to a level to see what each neuron is doing and which are not performing as needed.
+
+This paper goes into some detail of intrinsic geometry and the study of connectomics, but the core of the paper surrounds a tool built online called braintrinsic. 
+
+What it looks at is:
+
+– Dynamically display the nodal strength for any node being interrogated [3];
+– Dynamically create the shortest-path tree rooted in the node selected by the
+user;
+– Visualize the shortest path between any two nodes;
+– Select or deselect any regions in any topological space (anatomy versus intrinsic)
+during visualization;
+
+To get a better picture, imagine the highway system of chicago (specifically). How well the city of Chicago functions, is directly proportional to how the highways are performing. Lane closures, construction, traffic, congestion, accidents, etc... all those impact how well things work in the city. They cause people to be late, miss appointments, anger, frustration, etc... There are consequences of problems in the highway. 
+
+In addition, the highway system in Chicago is unique to Chicago, LA doesn't have the same structure to their highways, neither does new yor or any other majore city. Additionaly, there are many, many side streets as well to help stem the flow of traffic. Those streets also get overwhelmed depending on what is happening on the highway and with traffic in general.
+
+Thus, the highway has a structural component (that doesn't really change unless new roads are built or additional lanes are made in the space that is available), and a functional component (how the traffic functions on these highways). 
+
+What this tool allows for is creating a sort of map for the brain, of all the MAJOR "roads" in the brain. We'll call each node that is shown as a "suburb" or "village" ,or area, and the major roads connect each of them. Obviously downtown is a major hub, but there are others that are equally important such as bucktown, rodgers park, even suburbs like evanston, skokie, highland park, etc.. 
+
+What was aimed with BRAINtrinsic is to create a kind of GPS for these nodes, what's the fastest way to get from point A to point B, whats the most efficient way, what's the shortest way, etc..  With this tool we are able to visualizee some of the major connections of the brain.
+
+Going forward, there are multiple challenges that need to be addressed. Increasing the number of nodes, allowing for dynamic imaging data (medical imaging over a period of time), applying some kind of analaysis using the tool, showing the results, and then applying it scientifically to a neurological disorder to see if we can improve our understanding of the illness.
