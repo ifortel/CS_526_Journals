@@ -1,0 +1,19 @@
+Man Ray, or Emmanuel Radnitzky, is an american artist who spent most of his time in france in the early to mid-1900's. He was primarily known for his photography in the ares of Dada and Surrealism.
+
+Dada is an art form that came around after World War I that thought of itself as more anti-art, or art by chance. From what I have seen of Dada art, it seems more aimed at unintentional visual art. That is not to say there is no goal for the artist, but nothing involving art can be perfect and there are consequences that occur that can be viewed as art. An example of such would be throwing paint balls onto a canvas and calling them art (I think that's a good example)
+
+Surrealism on the other hand is not considered to be anti-art, but art of a different view of the world. THere is the conscious view that we as humans train over our lives based on perception, morals, values, traditions, etc... But there is also the uncoscious mind that views the world completely differntly, almost dystopian views or freuds ID. 
+
+Man ray as he was nicknamed, is not necessarily an artist in the conventional terms like a painter, but did most of his work with photography. Specifically, he worked with "camera-less" photography, whre he would create an image by placing objects directly onto photogrpahic paper and then expose these objects to light, very similar to the way an xray works. Surprisingly, around a few years earlier (late 1800's/early 1900's, the modern xray (radiography with X rays).
+
+The way it works is that you shoot a light source onto an object and then based on how much light is absorbed by objects, it does not translate to the paper, but instead leaves an outline of the object that is much brighter.
+
+Doing this in ThreeJS may prove to be difficult, but the idea is that there is a light sorce, and an object, but at the same time there needs to be a target in the distance between the light source and object. Then we would shine the light at the object and the target in the distance so that it is obscuring the light, whatever areas of the target receive the light,become black colored and the rest becomes white, hereby creating a photogram?
+
+
+
+References:
+
+https://www.quora.com/What-is-the-difference-between-dadaism-and-surrealism
+http://www.biography.com/people/man-ray-9452778
+http://www.moma.org/interactives/exhibitions/2012/inventingabstraction/?work=147
