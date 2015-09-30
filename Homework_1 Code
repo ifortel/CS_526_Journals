@@ -1,0 +1,187 @@
+<html>
+<head>
+    <title> Homework 1 Assignement - Recreate an Image
+            Man Ray - Rayograph 1922
+    </title>
+    <style>
+        body {margin: 0;}
+        canvas {width: 100%; height: 100% }
+    </style>
+    </head>
+    
+    <body>
+        <script src ="js/three.js"></script>
+        <script src="js/OrbitControls.js"></script>
+        <script>
+        
+
+            var scene = new THREE.Scene();
+            var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
+           
+   
+         
+            var renderer = new THREE.WebGLRenderer();
+			renderer.setSize( window.innerWidth, window.innerHeight );
+			document.body.appendChild( renderer.domElement );  
+            
+     /*       
+            var size = 10;
+var step = 1;
+
+var gridHelper = new THREE.GridHelper( size, step );
+scene.add( gridHelper );
+
+*/
+// Initialize the geometries that will be used in the image
+  
+  //background 
+           /*
+            var geometry8 = new THREE.PlaneGeometry( 80, 85, 32); 
+            var mat_2 = new THREE.LineBasicMaterial({color:0x000000});
+            var back = new THREE.Mesh(geometry8,mat_2);
+            scene.add(back);
+        */
+            // torus
+            var geo_1 = new THREE.TorusGeometry (10,.5,3,200,Math.PI*2);
+            //var mat_1 = new THREE.MeshPhongMaterial( { color: 0xCCCCCC } );
+            var mat_1 = new THREE.LineBasicMaterial( { color: 0xCCCCCC } );
+
+            var torus = new THREE.Mesh( geo_1, mat_1 );   
+                // ellipse
+            
+            
+            // triangle
+            var geo_3 = new THREE.TetrahedronGeometry (5,0);
+            var mat_3 = new THREE.MeshPhongMaterial({color:0xE6E6E6});
+            var triangle = new THREE.Mesh(geo_3,mat_1);
+            
+            //add to scene
+
+            
+var geometry4 = new THREE.PlaneGeometry( 1, 10, 32 );
+var geometry5 = new THREE.PlaneGeometry(5,6,32);
+var geometry6 = new THREE.PlaneGeometry(3,6,32);
+var geometry7 = new THREE.PlaneGeometry(6,14,32);
+var material4 = new THREE.MeshPhongMaterial( {color:0xE6E6E6, side: THREE.DoubleSide} );
+var material5 = new THREE.MeshPhongMaterial({color:0xE6E6E6});
+//var plane1 = new THREE.Mesh( geometry4, mat_1 );
+//var plane2 = new THREE.Mesh(geometry5,mat_1);
+    //        var plane3 = new THREE.Mesh(geometry6,mat_1);
+    //        var plane4 = new THREE.Mesh(geometry7,mat_1);
+  
+var plane1 = new THREE.Mesh( geometry4, mat_1 );
+var plane2 = new THREE.Mesh(geometry5,mat_1);
+            var plane3 = new THREE.Mesh(geometry6,mat_1);
+            var plane4 = new THREE.Mesh(geometry7,mat_1);
+            
+            
+var geom_s = new THREE.SphereGeometry( 3, 32, 32 );
+var mat_s = new THREE.MeshPhongMaterial( {color:0xE6E6E6} );
+var sphere = new THREE.Mesh( geom_s, mat_1 );
+
+            
+            
+var material = new THREE.LineBasicMaterial({
+	color: 0x0000ff
+});
+
+var line1 = new THREE.Geometry();
+line1.vertices.push(
+	new THREE.Vector3( 0, 0, 0 ),
+	new THREE.Vector3( 0, 8, 0 ),
+	new THREE.Vector3( 0, 0, 0 )
+);
+
+var line = new THREE.Line( line1, mat_1 );
+            // var line = new THREE.Line(line1,material);
+scene.add( line );
+            
+            
+var line2 = new THREE.Geometry();
+            line2.vertices.push(
+                new THREE.Vector3 (0,0,0),
+                new THREE.Vector3 (1,0,0),
+                new THREE.Vector3 (-1,0,0)
+            );
+var lines = new THREE.Line(line2,mat_1);
+//var lines = new THREE.Line(line2,material);
+            scene.add (lines);
+            
+            scene.add ( torus );
+            scene.add (triangle);
+            scene.add( plane1 ); 
+            scene.add(plane2);
+            scene.add(plane3);
+            scene.add(plane4);
+            scene.add( sphere );
+            
+            
+            triangle.rotateX(90);
+            triangle.rotateY(180);
+            triangle.rotateZ(270);
+            
+            plane1.rotateZ(300);
+         plane1.position.y =10;
+            plane2.position.y=12.5;
+            triangle.position.y=17;
+            plane3.position.y=21;
+            plane4.position.y=30;
+            sphere.position.y=37;
+ 
+ /*          
+var spotLight = new THREE.SpotLight( 0xffffff );
+spotLight.position.set( 500, 2000, 300 );
+
+spotLight.castShadow = true;
+
+spotLight.shadowMapWidth = 1024;
+spotLight.shadowMapHeight = 1024;
+
+spotLight.shadowCameraNear = 500;
+spotLight.shadowCameraFar = 4000;
+spotLight.shadowCameraFov = 30;
+
+scene.add( spotLight );
+  */          
+            var axisHelper = new THREE.AxisHelper( 5 );
+scene.add( axisHelper );
+          
+            axisHelper.position.x = -20;
+            
+            camera.position.z = 100;
+            camera.position.x = 30;
+            camera.position.y = 0;
+            controls = new THREE.OrbitControls(camera, renderer.domElement);
+    
+            
+        			var render = function () {
+				requestAnimationFrame( render );
+
+			
+				renderer.render(scene, camera);
+			};
+
+			render();
+        
+        </script>
+    
+    
+    
+    
+    
+    
+    
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
